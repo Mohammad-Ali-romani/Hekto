@@ -1,0 +1,206 @@
+@use "./../layouts/top-header";
+@use "./../layouts/navbar";
+@use "../variables/colors";
+@use "../variables/fonts";
+@use "../helper/mixins";
+
+%content {
+  $wh: 102%;
+  content: "";
+  position: absolute;
+  width: $wh;
+  height: $wh;
+  z-index: -1;
+  border-radius: 50%;
+  opacity: 0.35;
+  background-color: #ecd2fa;
+}
+$dis: 5px;
+.slide-home {
+  background-color: #f2f0ff;
+  height: 70.740740740741vh;
+  position: relative;
+  margin-bottom: 79px;
+  overflow: hidden;
+  .box-power {
+    position: absolute;
+    top: 0;
+    .image-power {
+      width: 19vw;
+    }
+  }
+  .header-text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .header-body {
+      width: 33.541666666667vw;
+      .header-sub-title {
+        font-size: 0.83vw;
+        font-weight: bold;
+        color: colors.$primaryColor;
+        padding-left: 4px;
+        margin-bottom: 16px;
+      }
+      .header-title {
+        font-size: 2.76vw;
+        font-weight: bold;
+        font-family: fonts.$secondlyFont;
+      }
+      .header-description {
+        color: #8a8fb9;
+        font-size: 0.83vw;
+        margin-bottom: 28px;
+      }
+    }
+  }
+  .box-sofa {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    &::after {
+      @extend %content;
+      bottom: $dis;
+      left: $dis;
+    }
+    &::before {
+      @extend %content;
+      top: $dis;
+      right: $dis;
+    }
+    .image-sofa {
+      width: 32.8vw;
+    }
+    .box-offer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 139px;
+      height: 142px;
+      .image-offer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include mixins.position-center;
+        width: 6.59vw;
+        text-align: center;
+      }
+      .text-offer {
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.823vw;
+        font-weight: bold;
+        font-family: fonts.$secondlyFont;
+        color: #fff;
+        line-height: 1.2;
+        text-align: center;
+      }
+    }
+  }
+}
+.leatest-products {
+  .list-leatest-products {
+    .nav-item {
+      .nav-link {
+        color: colors.$textProductColor;
+        cursor: pointer;
+        &.active {
+          color: colors.$primaryColor;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .leatest-products-items {
+    margin-top: 40px;
+    row-gap: 100px;
+  }
+}
+// trending products section
+.trending-products {
+  .container-trending{
+    max-width: 1168px;
+  }
+  background-color: #f1f0ff;
+  // height: 53.611vh;
+  height: 579px;
+  margin-top: 100px;
+  .box-image {
+    @include mixins.center-flex;
+    height: 100%;
+    position: relative;
+    .back-trending {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+    }
+    .image-trending {
+      z-index: 2;
+    }
+  }
+  .trending-body {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .trending-title {
+      font-size: 35px;
+      color: colors.$textProductColor;
+      font-weight: bold;
+      font-family: fonts.$secondlyFont;
+    }
+    .trending-list-items {
+      list-style: none;
+      color: #acabc3;
+      font-weight: 400;
+      line-height: 28px;
+
+      .trending-item {
+        position: relative;
+        padding-left: 21px;
+        margin-bottom: 10px;
+        $iconColors: (
+          "blue": #2b2bf5,
+          "pick": #f52b70,
+          "green": #2bf5cc,
+        );
+        @each $color, $code in $iconColors {
+          .icon-item-#{$color} {
+            background-color: $code;
+            height: 11px;
+            width: 11px;
+            border-radius: 50%;
+            margin-right: 10px;
+            position: absolute;
+            left: 0;
+            top: 9px;
+          }
+        }
+      }
+    }
+    .box-button {
+      margin-top: 15px
+    }
+    .box-price {
+      margin-left: 20px;
+      color: colors.$textProductColor;
+      .type-sofa {
+        font-family: fonts.$secondlyFont;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 1810px) {
+  .box-power {
+    display: none;
+  }
+}
+// ACABC3
+// blue: 2B2BF5
+// pick: F52B70
+// blue: 2BF5CC

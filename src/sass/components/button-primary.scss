@@ -1,0 +1,12 @@
+@use '../variables/colors';
+@use '../variables/fonts';
+.btn{
+  &.btn-hek-primary{
+    border-radius: 2px;
+    background-color: colors.$primaryColor;
+    color: #fff;
+    font-family: fonts.$secondlyFont;
+    padding: 0.677vw 2.083vw;
+    font-size: 0.885vw;
+  }
+}
