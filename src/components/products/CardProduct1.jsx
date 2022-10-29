@@ -15,7 +15,7 @@ const CardProduct1 = ({ image, title, code, price,classN ,onHover}) => {
           <img src={image} alt="" />
           <button className="btn btn-hek-success">View Details</button>
         </div>
-        <div class="card-product1-body">
+        <div className="card-product1-body">
           <h4 className='card-product1-title'>{title}</h4>
           <LineCard />
           <h5 className="card-product1-code">Code - Y {code}</h5>

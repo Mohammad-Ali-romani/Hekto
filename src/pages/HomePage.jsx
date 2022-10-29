@@ -29,8 +29,24 @@ import iconShopx2 from "./../assets/images/Home Page/icon-shopx2.png";
 import iconShopx3 from "./../assets/images/Home Page/icon-shopx3.png";
 import iconShopx4 from "./../assets/images/Home Page/icon-shopx4.png";
 // images trending products
+import trendingProduct1 from "./../assets/images/Home Page/trending-product-1.png";
+import trendingProduct2 from "./../assets/images/Home Page/trending-product-2.png";
+import trendingProduct3 from "./../assets/images/Home Page/trending-product-3.png";
+import trendingProduct4 from "./../assets/images/Home Page/trending-product-4.png";
+// off products
+import offProduct1 from "./../assets/images/Home Page/off-product-1.png";
+import offProduct2 from "./../assets/images/Home Page/off-product-2.png";
+// trnding products list
+import trProduct1 from "./../assets/images/Home Page/tre-1.png";
+import trProduct2 from "./../assets/images/Home Page/tre-2.png";
+import trProduct3 from "./../assets/images/Home Page/tre-3.png";
+// images trending products
 import trendProducts from "./../assets/images/Home Page/trending-products.png";
 import backTrendProducts from "./../assets/images/Home Page/svgs/back-trending.svg";
+import CardProduct3 from "../components/products/CardProduct3";
+import OffProduct from "../components/sections/OffProduct";
+import TrndingProduct from "../components/products/TrndingProduct";
+import companies from "./../assets/images/Home Page/companies.png";
 
 const HomePage = () => {
   function hoverCard(e) {
@@ -38,7 +54,7 @@ const HomePage = () => {
   }
   return (
     <>
-      <div className="slide-home ">
+      <div className="slide-home">
         <div className="box-power">
           <img src={power} alt="" className="image-power" />
         </div>
@@ -156,10 +172,11 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="trending-products">
+      {/* unique-features-of-leatest */}
+      <section className="unique-features-of-leatest">
         <div className="container container-trending">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 d-none d-lg-block">
               <div className="box-image">
                 <img src={backTrendProducts} alt="" className="back-trending" />
                 <img src={trendProducts} alt="" className="image-trending" />
@@ -208,6 +225,91 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+      </section>
+      {/* trending-products */}
+      <section className="trending-products">
+        <TitleSection>Trending Products</TitleSection>
+        <div className="container">
+          <div className="row">
+            <CardProduct3
+              title="Cantilever chair"
+              image={trendingProduct1}
+              price="26.00"
+              priceOffer="42.00"
+            />
+            <CardProduct3
+              title="Cantilever chair"
+              image={trendingProduct2}
+              price="26.00"
+              priceOffer="42.00"
+            />
+            <CardProduct3
+              title="Cantilever chair"
+              image={trendingProduct3}
+              price="26.00"
+              priceOffer="42.00"
+            />
+            <CardProduct3
+              title="Cantilever chair"
+              image={trendingProduct4}
+              price="26.00"
+              priceOffer="42.00"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container mt-5">
+          <div className="row">
+            <div className="col-lg-9">
+              <div className="row">
+                <OffProduct
+                  title="23% off in all products"
+                  textLink="Shop Now"
+                  color="#FFF6FB"
+                  image={offProduct1}
+                  urlLink="#"
+                />
+                <OffProduct
+                  title="23% off in all products"
+                  textLink="View Collection"
+                  color="#EEEFFB"
+                  image={offProduct2}
+                  urlLink="#"
+                />
+              </div>
+            </div>
+            <div className="col-lg-3 col-xm-12 d-none d-lg-flex justify-content-between flex-column">
+              <TrndingProduct
+                name="Executive Seat chair"
+                price="32.00"
+                image={trProduct1}
+              />
+              <TrndingProduct
+                name="Executive Seat chair"
+                price="32.00"
+                image={trProduct2}
+              />
+              <TrndingProduct
+                name="Executive Seat chair"
+                price="32.00"
+                image={trProduct3}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="subscribe d-flex justify-content-center align-items-center mt-5">
+        <div className="text-center ">
+          <h2 className="title-subsribe">
+            Get Leatest Update By subscribe
+            <br /> Our Newslater
+          </h2>
+          <ButtonPrimary>Shop Now</ButtonPrimary>
+        </div>
+      </section>
+      <section className="companies text-center">
+        <img src={companies} alt="" className="image-companies" />
       </section>
     </>
   );

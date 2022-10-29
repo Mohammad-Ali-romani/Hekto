@@ -10,7 +10,7 @@
   border-radius: 2px;
   // flex: 1;
   .box-image-card-product2 {
-    background-color: colors.$backgroundProductColor2;
+    background-color: colors.$backgroundProductColor;
     @include mixins.center-flex;
     height: 269.96px;
     transition: background-color $duration;
