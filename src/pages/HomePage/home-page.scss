@@ -1,0 +1,300 @@
+@use "../../sass/variables/colors";
+@use "../../sass/variables/fonts";
+@use "../../sass/helper/mixins";
+
+// side home
+%content {
+  $wh: 102%;
+  content: "";
+  position: absolute;
+  width: $wh;
+  height: $wh;
+  z-index: -1;
+  border-radius: 50%;
+  opacity: 0.35;
+  background-color: #ecd2fa;
+}
+$dis: 5px;
+
+.slide-home {
+  background-color: #f2f0ff;
+  height: 764px;
+  position: relative;
+  margin-bottom: 79px;
+  overflow: hidden;
+  font-size: 16px;
+  .box-power {
+    position: absolute;
+    top: 0;
+    .image-power {
+      width: 387px;
+    }
+  }
+  .header-text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    .header-body {
+      width: 33.541666666667vw;
+      .header-sub-title {
+        font-size: 1em;
+        font-weight: bold;
+        color: colors.$primaryColor;
+        padding-left: 4px;
+        margin-bottom: 16px;
+      }
+      .header-title {
+        font-size: calc(3em + 5px);
+        font-weight: bold;
+        font-family: fonts.$secondlyFont;
+      }
+      .header-description {
+        color: #8a8fb9;
+        font-size: 1em;
+        margin-bottom: 28px;
+      }
+    }
+  }
+  .box-sofa {
+    position: absolute;
+    right: -180px;
+    top: 50%;
+    transform: translateY(-50%);
+    &::after {
+      @extend %content;
+      bottom: $dis;
+      left: $dis;
+    }
+    &::before {
+      @extend %content;
+      top: $dis;
+      right: $dis;
+      // $media-size-side-home: (1844px, 14px, 700px, 318px, 600px, 116px);
+    }
+    .image-sofa {
+      width: 629px;
+    }
+    .box-offer {
+      position: absolute;
+      top: 0;
+      right: 30px;
+      height: 142px;
+      .image-offer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include mixins.position-center;
+        width: 136px;
+        text-align: center;
+      }
+      .text-offer {
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: calc(2em + 3px);
+        font-weight: bold;
+        font-family: fonts.$secondlyFont;
+        color: #fff;
+        line-height: 1.2;
+        text-align: center;
+      }
+    }
+  }
+}
+$media-size-side-home: (1844px, 14px, 700px, 29px, 126px),
+  (1726px, 13.5px, 650px, 90px, 110px), (1611px, 13px, 610px, 125px, 100px),
+  (1549px, 12px, 540px, 180px, 90px), (1488px, 10px, 510px, 220px, 85px),
+  (1414px, 9px, 470px, 260px, 85px), (881px, 7px, 420px, 300px, 72px);
+
+@each $width, $side-font, $side-height, $size,
+  $size-offer in $media-size-side-home
+{
+  @media (max-width: $width) {
+    .slide-home {
+      font-size: $side-font;
+      height: $side-height;
+      .box-power .image-power {
+        width: 387px - $size;
+      }
+      .box-sofa {
+        .image-sofa {
+          width: 629px - $size;
+        }
+        .box-offer {
+          .image-offer {
+            width: $size-offer;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1726px) {
+  .box-sofa {
+    // right: 0 !important;
+    right: 3% !important;
+  }
+}
+@media (max-width: 1492px) {
+  .box-power {
+    display: none;
+  }
+}
+@media (max-width: 1113px) {
+  .header-body {
+    width: 42.541667vw !important;
+  }
+}
+@media (max-width: 753px) {
+  .box-sofa {
+    display: none;
+  }
+  .slide-home .header-text {
+    justify-content: center;
+  }
+  .header-body {
+    width: 70vw !important;
+  }
+  .slide-home {
+    height: 320px;
+  }
+}
+// leatest products
+.leatest-products {
+  .list-leatest-products {
+    .nav-item {
+      .nav-link {
+        color: colors.$textProductColor;
+        cursor: pointer;
+        &.active {
+          color: colors.$primaryColor;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .leatest-products-items {
+    margin-top: 40px;
+    row-gap: 100px;
+  }
+}
+// trending products section
+.unique-features-of-leatest {
+  background-color: #f1f0ff;
+  // height: 53.611vh;
+  height: 579px;
+  margin-top: 100px;
+  .container-trending {
+    max-width: 1168px;
+  }
+
+  .box-image {
+    @include mixins.center-flex;
+    height: 100%;
+    position: relative;
+    .back-trending {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+    }
+    .image-trending {
+      z-index: 2;
+    }
+  }
+  .trending-body {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .trending-title {
+      font-size: 35px;
+      color: colors.$textProductColor;
+      font-weight: bold;
+      font-family: fonts.$secondlyFont;
+    }
+    .trending-list-items {
+      list-style: none;
+      color: #acabc3;
+      font-weight: 400;
+      line-height: 28px;
+
+      .trending-item {
+        position: relative;
+        padding-left: 21px;
+        margin-bottom: 10px;
+        $iconColors: (
+          "blue": #2b2bf5,
+          "pick": #f52b70,
+          "green": #2bf5cc,
+        );
+        @each $color, $code in $iconColors {
+          .icon-item-#{$color} {
+            background-color: $code;
+            height: 11px;
+            width: 11px;
+            border-radius: 50%;
+            margin-right: 10px;
+            position: absolute;
+            left: 0;
+            top: 9px;
+          }
+        }
+      }
+    }
+    .box-button {
+      margin-top: 15px;
+    }
+    .box-price {
+      margin-left: 20px;
+      color: colors.$textProductColor;
+      .type-sofa {
+        font-family: fonts.$secondlyFont;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .unique-features-of-leatest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .unique-features-of-leatest {
+    .trending-title {
+      font-size: 25px !important;
+    }
+  }
+}
+.subscribe {
+  background-image: url("../../assets/images/Home\ Page/background-subscribe.png");
+  height: 42.778vh;
+  .title-subsribe {
+    font-family: fonts.$secondlyFont;
+    color: colors.$textProductColor;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+}
+.companies {
+  margin-top: 100px;
+  .image-companies {
+    // max-width: 904px;
+  }
+}
+@media (max-width: 904px){
+  .companies {
+    padding-left: 15px;
+    padding-right: 15px;
+    .image-companies {
+      width: 100%;
+    }
+  }
+}

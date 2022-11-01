@@ -1,5 +1,4 @@
 import * as Bi from "react-icons/bi";
-import './../../sass/pages/home-page.scss'
 
 const TopHeader = () => {
   return (

@@ -1,0 +1,18 @@
+@use "../../../sass/variables/colors";
+@use "../../../sass/variables/fonts";
+.trnding-product{
+  color: colors.$textProductColor;
+  font-family: fonts.$secondlyFont;
+  .box-image{
+    background-color: colors.$backgroundProductColor2;
+    // img{}
+  }
+  .name-product{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .price-product{
+    text-decoration: line-through;
+    font-size: 12px;
+  }
+}

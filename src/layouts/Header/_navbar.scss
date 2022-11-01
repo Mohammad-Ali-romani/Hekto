@@ -1,0 +1,38 @@
+@use "../../sass/variables/colors";
+.navbar {
+  background-color: #fff;
+  .navbar-brand {
+    margin-right: 4.583vw;
+    font-weight: bold;
+    font-family: josefin-sans, sans-serif;
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: #0d0e43;
+        &.active {
+          color: colors.$primaryColor;
+        }
+      }
+    }
+  }
+  .search-navbar {
+    width: 317px;
+    .form-search {
+      border: 2px solid #e7e6ef;
+      padding: 6px;
+      margin-right: -2px;
+      width: 100%;
+    }
+    .btn-search {
+      padding: 0 10px;
+      background-color: colors.$primaryColor;
+      border: none;
+      svg {
+        font-size: 28px;
+        color: #fff;
+      }
+    }
+  }
+}
+// #0D0E43

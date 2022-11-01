@@ -1,4 +1,4 @@
-import HomePage from './HomePage'
+import HomePage from './HomePage/HomePage'
 import AboutUs from './AboutUs'
 import Account from './Account'
 import Blog from './Blog'

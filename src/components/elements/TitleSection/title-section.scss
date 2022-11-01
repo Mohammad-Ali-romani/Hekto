@@ -1,0 +1,11 @@
+@use '../../../sass/variables/fonts';
+@use '../../../sass/variables/colors';
+
+.title-section{
+  text-align: center;
+  margin-top: 50px;
+  font-family: fonts.$secondlyFont;
+  font-size: 30px;
+  color: colors.$thirColor;
+  font-weight: bold;
+}

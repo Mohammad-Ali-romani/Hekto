@@ -1,0 +1,96 @@
+@use "../../../sass/variables/colors";
+@use "../../../sass/variables/fonts";
+@use "../../../sass/helper/mixins";
+
+.card-product2 {
+  $duration: 0.4s;
+  margin: auto;
+  max-height: 306px;
+  max-width: 360px;
+  border-radius: 2px;
+  // flex: 1;
+  .box-image-card-product2 {
+    background-color: colors.$backgroundProductColor;
+    @include mixins.center-flex;
+    height: 269.96px;
+    transition: background-color $duration;
+    position: relative;
+    .buttons-hover {
+      position: absolute;
+      left: 16px;
+      bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+      opacity: 0;
+      transition: opacity $duration;
+      svg {
+        font-size: 22px;
+        color: #2f1ac4;
+      }
+      .icon-circle {
+        background-color: #eeeffb;
+        padding: 3px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+    }
+    .sale-image {
+      position: absolute;
+      top: 20px;
+      left: 8px;
+      opacity: 0;
+      transition: opacity $duration;
+      .sale-text {
+        position: absolute;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-15deg);
+        font-size: 14px;
+      }
+    }
+  }
+  .body-card-product2 {
+    font-family: fonts.$secondlyFont;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: colors.$textProductColor;
+    .title-card-product2 {
+      font-size: 16px;
+    }
+    .box-price {
+      .price-actived {
+        font-size: 14px;
+        margin-right: 8px;
+      }
+      .price-unactived {
+        font-size: 12px;
+        text-decoration: line-through;
+        color: colors.$primaryColor;
+        margin-right: 10px;
+      }
+    }
+  }
+  &:hover {
+    .box-image-card-product2 {
+      background-color: #fff;
+      .buttons-hover {
+        opacity: 1;
+      }
+      .sale-image {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// color under line in title :EEEFFB
+// color write : #151875
+// FB2448 price offer

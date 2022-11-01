@@ -1,0 +1,16 @@
+@use '../../../sass/variables/fonts';
+
+.list-items-footer{
+  .title{
+    font-family: fonts.$secondlyFont;
+    font-weight: 600;
+  }
+  .list-items{
+    line-height: 38px;
+    a{
+      text-decoration: none;
+      color:#8A8FB9;
+
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@use "../../../sass/variables/colors";
+@use "../../../sass/variables/fonts";
+
+// width: 420px !important;
+
+.off-product {
+  height: 270px;
+  position: relative;
+  max-width: 420px;
+  margin-right: 12px;
+  .off-product-container {
+    padding-left: 25px;
+    padding-top: 34px;
+    .off-product-title {
+      font-size: 26px;
+      font-family: fonts.$secondlyFont;
+      font-weight: 600;
+      color: colors.$textProductColor;
+    }
+    .off-product-link {
+      color: colors.$primaryColor;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+  .off-product-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .off-product{
+    max-width: inherit;
+    margin-right: 0;  
+  }
+}
+@media (max-width: 400px){
+  .off-product .off-product-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 162px;
+  }
+}
