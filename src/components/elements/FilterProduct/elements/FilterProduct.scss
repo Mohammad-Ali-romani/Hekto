@@ -1,0 +1,45 @@
+@use "../../../../sass/variables/fonts";
+@use "../../../../sass/variables/colors";
+
+.filter-product {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  .title-filter-product {
+    font-family: fonts.$secondlyFont;
+    color: colors.$textProductColor;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 3px;
+  }
+  .description-filter-product {
+    font-size: 12px;
+    color: #8a8fb9;
+  }
+  .label-form-filter {
+    color: #3f509e;
+    margin: 0 10px;
+  }
+  .sort-filter {
+    border: 1px solid #e7e6ef;
+    color: #8a8fb9;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+  .btn-icon-filter {
+    border: none;
+    background: none;
+    padding: 0;
+    &:first-of-type {
+      svg {
+        font-size: 30px;
+      }
+    }
+    &:last-of-type {
+      margin-top: -2px;
+      svg {
+        color: colors.$textProductColor;
+        font-size: 24px;
+      }
+    }
+  }
+}

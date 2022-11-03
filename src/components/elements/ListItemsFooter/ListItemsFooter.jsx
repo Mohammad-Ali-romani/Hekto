@@ -7,7 +7,7 @@ const ListItemsFooter = ({ title, items }) => {
         <h4 className="title">{title}</h4>
         <ul className="list-items mt-4 mb-0">
           {items.map((item) => (
-            <li className="item"><a href="#">{item}</a></li>
+            <li className="item" key={item}><a href="#">{item}</a></li>
           ))}
         </ul>
       </div>

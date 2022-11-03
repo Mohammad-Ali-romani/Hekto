@@ -283,18 +283,3 @@ $media-size-side-home: (1844px, 14px, 700px, 29px, 126px),
     margin-bottom: 25px;
   }
 }
-.companies {
-  margin-top: 100px;
-  .image-companies {
-    // max-width: 904px;
-  }
-}
-@media (max-width: 904px){
-  .companies {
-    padding-left: 15px;
-    padding-right: 15px;
-    .image-companies {
-      width: 100%;
-    }
-  }
-}

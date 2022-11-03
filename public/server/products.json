@@ -1,0 +1,110 @@
+[
+  {
+    "id":1,
+    "name": "Vel elit euismod",
+    "price": 26.00,
+    "price_old": 42.00,
+    "evaluation": 4,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
+    "image": "01.png"
+  },
+  {
+    "id":2,
+    "name": "Ultricies condimentum imperdiet",
+    "price": 26.00,
+    "price_old": 42.00,
+    "evaluation": 4,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
+    "image": "02.png"
+  },
+  {
+    "id":3,
+    "name": "Vitae suspendisse sed",
+    "price": 26.00,
+    "price_old": 42.00,
+    "evaluation": 4,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
+    "image": "03.png"
+  },
+  {
+    "id":4,
+    "name": "Sed at fermentum",
+    "price": 26.00,
+    "price_old": 42.00,
+    "evaluation": 4,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
+    "image": "04.png"
+  },
+  {
+    "id":5,
+    "name": "Fusce pellentesque at",
+    "price": 26.00,
+    "price_old": 42.00,
+    "evaluation": 4,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
+    "image": "05.png"
+  },
+  {
+    "id":6,
+    "name": "Vestibulum magna laoreet",
+    "price": 26.00,
+    "price_old": 42.00,
+    "evaluation": 4,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
+    "image": "06.png"
+  },
+  {
+    "id":7,
+    "name": "Sollicitudin amet orci",
+    "price": 26.00,
+    "price_old": 42.00,
+    "evaluation": 4,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
+    "image": "07.png"
+  },
+  {
+    "id":8,
+    "name": "Ultrices mauris sit",
+    "price": 26.00,
+    "price_old": 42.00,
+    "evaluation": 4,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
+    "image": "08.png"
+  },
+  {
+    "id":9,
+    "name": "Pellentesque condimentum ac",
+    "price": 26.00,
+    "price_old": 42.00,
+    "evaluation": 4,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
+    "image": "09.png"
+  },
+  {
+    "id":10,
+    "name": "Cras scelerisque velit",
+    "price": 26.00,
+    "price_old": 42.00,
+    "evaluation": 4,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
+    "image": "10.png"
+  },
+  {
+    "id":11,
+    "name": "Lectus vulputate faucibus",
+    "price": 26.00,
+    "price_old": 42.00,
+    "evaluation": 4,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
+    "image": "11.png"
+  },
+  {
+    "id":12,
+    "name": "Purus risus, ut",
+    "price": 26.00,
+    "price_old": 42.00,
+    "evaluation": 4,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
+    "image": "12.png"
+  }
+]

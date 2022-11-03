@@ -46,7 +46,6 @@ import backTrendProducts from "./../../assets/images/Home Page/svgs/back-trendin
 import CardProduct3 from "../../components/products/CardProduct3/CardProduct3";
 import OffProduct from "../../components/sections/OffProduct/OffProduct";
 import TrndingProduct from "../../components/products/TrndingProduct/TrndingProduct";
-import companies from "./../../assets/images/Home Page/companies.png";
 import './home-page.scss'
 const HomePage = () => {
   function hoverCard(e) {
@@ -310,9 +309,7 @@ const HomePage = () => {
           <ButtonPrimary>Shop Now</ButtonPrimary>
         </div>
       </section>
-      <section className="companies text-center">
-        <img src={companies} alt="" className="image-companies" />
-      </section>
+      
     </>
   );
 };

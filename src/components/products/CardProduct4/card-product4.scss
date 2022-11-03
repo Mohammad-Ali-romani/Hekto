@@ -1,0 +1,68 @@
+@use "../../../sass/variables/colors";
+@use "../../../sass/variables/fonts";
+@use "../../../sass/helper/mixins";
+
+.product {
+  max-width: 270px;
+  text-align: center;
+  height: 363px;
+  margin: auto;
+  font-family: fonts.$secondlyFont;
+  .box-img {
+    height: 280px;
+    width: 100%;
+    background-color: colors.$backgroundProductColor;
+    @include mixins.center-flex;
+    img{
+      width: auto;
+    }
+  }
+
+  .title-product {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    
+    color: colors.$textProductColor;
+  }
+
+  .icons-product {
+    @include mixins.center-flex;
+    column-gap: 5px;
+    .icon-product {
+      width: 10px;
+      height: 10px;
+      // background-color: #ddd;
+      border-radius: 50%;
+    }
+    $colors-icon: #de9034, #ec42a2, #8568ff;
+    @each $color in $colors-icon {
+      $i: index($colors-icon, $color);
+      .icon-product:nth-child(#{$i}) {
+        background-color: $color;
+      }
+    }
+  }
+  .box-price {
+    margin-top: 10px;
+    font-size: 14px;
+    .price {
+      color: colors.$textProductColor;
+      margin-right: 10px;
+    }
+    .price-old {
+      color: colors.$primaryColor;
+      text-decoration: line-through;
+    }
+  }
+}
+@media (max-width: 210px) {
+  .product {
+    .box-img {
+      height: 200px;
+      img{
+        width: 80%;
+      }
+    }
+  }
+}

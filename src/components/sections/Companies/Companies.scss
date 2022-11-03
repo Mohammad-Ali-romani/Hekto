@@ -1,0 +1,15 @@
+.companies {
+  margin-top: 100px;
+  .image-companies {
+    // max-width: 904px;
+  }
+}
+@media (max-width: 904px){
+  .companies {
+    padding-left: 15px;
+    padding-right: 15px;
+    .image-companies {
+      width: 100%;
+    }
+  }
+}
