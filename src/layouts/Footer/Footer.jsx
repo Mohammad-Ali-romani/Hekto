@@ -75,7 +75,6 @@ const Footer = () => {
               <span className="icon-social"><FaFacebookF /></span>
               <span className="icon-social"><FaInstagram /></span>
               <span className="icon-social"><FaTwitter /></span>
-          
             </div>
           </div>
         </div>

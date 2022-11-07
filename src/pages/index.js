@@ -12,7 +12,7 @@ import SearchProducts from './SearchProducts'
 import Shop from './Shop/Shop'
 import ShopingCart from './ShopingCart'
 import SingleBlog from './SingleBlog'
-import SingleProduct from './SingleProduct'
+import SingleProduct from './SingleProduct/SingleProduct'
 
 // export pages
 export { HomePage, AboutUs, Account, Blog, Buy, ContactUs, Faq, NotFound, OrderCompleted, Products, SearchProducts, Shop, ShopingCart, SingleBlog, SingleProduct }

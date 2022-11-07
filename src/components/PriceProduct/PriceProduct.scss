@@ -1,0 +1,15 @@
+@use '../../sass/variables/colors';
+
+.price-product {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  .price {
+    color: colors.$textProductColor;
+    margin-right: 10px;
+  }
+  .price-old {
+    color: colors.$primaryColor;
+    text-decoration: line-through;
+  }
+}

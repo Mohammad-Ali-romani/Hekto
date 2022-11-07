@@ -1,0 +1,78 @@
+@use "../../sass/helper/mixins";
+@use "../../sass/variables/fonts";
+@use "../../sass/variables/colors";
+.single-product {
+  .card-single-product {
+    font-family: fonts.$secondlyFont;
+    margin-top: 100px;
+    background-color: #fff;
+    padding: 13px;
+    box-shadow: 0 0 25px 10px #f6f4fd;
+    .box-image {
+      width: 151px;
+      height: 155px;
+      overflow: hidden;
+      background-color: #c4c4c4;
+      background-size: 190%;
+      background-position: center;
+    }
+    .box-single-image {
+      max-width: 375px;
+      max-height: 487px;
+      overflow: hidden;
+      @include mixins.center-flex;
+      img {
+      }
+    }
+    .info-product {
+      .title-single-product {
+        color: #0d134e;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 3px;
+      }
+      .evaluation {
+        svg {
+          color: gold;
+          font-size: 17px;
+        }
+        .number-evaluation {
+          color: colors.$textProductColor;
+          margin-left: 4px;
+        }
+      }
+      .description {
+        font-weight: 600;
+        color: #A9ACC6;
+        margin-top: 8px;
+      }
+      .favorite{
+        margin-left: 10px;
+        font-size: 25px;
+      }
+      .box-share{
+
+      }
+      .sub-title{
+        font-size: 16px;
+        color: colors.$textProductColor;
+        font-weight: 700;
+        margin-right: 8px;
+      }
+      .social-media{
+        column-gap: 10px;
+        .icon-social{
+          width: 20px;
+          height: 20px;
+          
+          border-radius: 50%;
+          @include mixins.center-flex;
+          svg{
+            font-size: 12px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
