@@ -4,7 +4,7 @@
     "name": "Vel elit euismod",
     "price": 26.00,
     "price_old": 42.00,
-    "evaluation": 4,
+    "evaluation": 5,
     "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
     "image": "01.png"
   },
@@ -13,7 +13,7 @@
     "name": "Ultricies condimentum imperdiet",
     "price": 26.00,
     "price_old": 42.00,
-    "evaluation": 4,
+    "evaluation": 3,
     "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
     "image": "02.png"
   },
@@ -22,7 +22,7 @@
     "name": "Vitae suspendisse sed",
     "price": 26.00,
     "price_old": 42.00,
-    "evaluation": 4,
+    "evaluation": 2,
     "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
     "image": "03.png"
   },
@@ -31,7 +31,7 @@
     "name": "Sed at fermentum",
     "price": 26.00,
     "price_old": 42.00,
-    "evaluation": 4,
+    "evaluation": 1,
     "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi earum reprehenderit repellat natus voluptates neque voluptatem eum pariatur, non harum iure consequuntur ad error aliquam dicta magni optio placeat necessitatibus?",
     "image": "04.png"
   },

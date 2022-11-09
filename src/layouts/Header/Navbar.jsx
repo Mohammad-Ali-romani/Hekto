@@ -27,23 +27,27 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <DropdownNav text="Home" active="active" items={[]} />
             <li className="nav-item">
-              <Link className="nav-link" to={"products"}>
-                Products
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to={"/blogs"}>
-                Blog
+              <Link className="nav-link active" to={"/"}>
+              Home
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to={"/shop"}>
-                Shop
+                Products
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
+              <Link className="nav-link" to={"/blogs"}>
+                Blog
+              </Link>
+            </li> */}
+            {/* <li className="nav-item">
+              <Link className="nav-link" to={"/shop"}>
+                Shop
+              </Link>
+            </li> */}
+            {/* <li className="nav-item">
               <Link className="nav-link" to={"/contact-us"}>
                 Contact
               </Link>
@@ -52,7 +56,7 @@ const Navbar = () => {
               <Link className="nav-link" to={"/about-us"}>
                 About Us
               </Link>
-            </li>
+            </li> */}
           </ul>
           <form
             onSubmit={searchFrom}

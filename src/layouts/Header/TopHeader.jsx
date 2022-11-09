@@ -36,9 +36,8 @@ const TopHeader = () => {
                   <span className='dropdown-icon'><Bi.BiChevronDown /></span>
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">English</a></li>
-                  <li><a className="dropdown-item" href="#">Arabic</a></li>
-                  <li><a className="dropdown-item" href="#">Spain</a></li>
+                  <li><a className="dropdown-item" href="#">USD</a></li>
+                  <li><a className="dropdown-item" href="#">EUR</a></li>
                 </ul>
               </li>
               <li className="item-top ms-3"><a href="">Login <Bi.BiUser /> </a></li>

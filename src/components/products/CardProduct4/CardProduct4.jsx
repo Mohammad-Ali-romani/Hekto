@@ -8,7 +8,8 @@ const CardProduct4 = ({ id, name, price, priceOld, image }) => {
   return (
     <div className="col-xl-3 col-lg-4 col-sm-6 col-12">
       <Link
-        to={"/products/" + name.split(" ").join("-")}
+        to={`/products/${id}/${name.split(" ").join("-").toLowerCase()}`}
+        id={id}
         className="product-link"
       >
         <div className="product">
