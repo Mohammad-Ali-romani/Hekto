@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hekto/static/css/main.f048deb2.css",
-    "main.js": "/hekto/static/js/main.0d524c60.js",
+    "main.js": "/hekto/static/js/main.ae085e50.js",
     "static/media/background-subscribe.png": "/hekto/static/media/background-subscribe.a16bb825b4dffd5c1692.png",
     "static/media/header.png": "/hekto/static/media/header.4b4425ef739a0f61cbde.png",
     "static/media/03.png": "/hekto/static/media/03.1ff4c266f7f7c29da1af.png",
@@ -32,10 +32,10 @@
     "static/media/offer.svg": "/hekto/static/media/offer.f501a1324ec9249541eda9b37ec6a9f3.svg",
     "static/media/back-trending.svg": "/hekto/static/media/back-trending.394c6747d460f032d94d07104816dc28.svg",
     "main.f048deb2.css.map": "/hekto/static/css/main.f048deb2.css.map",
-    "main.0d524c60.js.map": "/hekto/static/js/main.0d524c60.js.map"
+    "main.ae085e50.js.map": "/hekto/static/js/main.ae085e50.js.map"
   },
   "entrypoints": [
     "static/css/main.f048deb2.css",
-    "static/js/main.0d524c60.js"
+    "static/js/main.ae085e50.js"
   ]
 }
